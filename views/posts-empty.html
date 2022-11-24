@@ -3,33 +3,37 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Your Rank</title>
+        <title>Your Posts</title>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../css/style-artist-v1.css">
     </head>
     <body>
-        <nav class="top-bar-area-block d-flex-row align-items-center j-c-center white z-index-max">
-            <div class="container d-flex-row align-items-center j-c-center">
-                <a href="">
-                    <img src="../assets/logo/logo.svg" alt="MIDLY">
-                </a>
+        <nav class="top-bar-area-overlay-fixed bg-dark d-flex-row align-items-center j-c-center white z-index-max top-0 shadow-dark-400">
+            <div class="container d-flex-row align-items-center j-c-end">
+                <button class="bg-purple-300 d-flex-row align-items-center j-c-center fsize-xs-2 f-w-500 w-36px h-36px">
+                    <img src="../assets/icons/plus-black.svg" alt="">
+                </button>
             </div>
         </nav>
         
-        <div class="container pb-xs-24 pb-lg-8">
+        <div class="container pt-xs-20 pt-lg-6 pb-xs-24 pb-lg-8">
             <div id="current-month">
-                <h1>Luglio 2022</h1>
+                <h1>I tuoi post</h1>
             </div>
 
             <section id="metrics-empty-state" class="mt-xs-16 mx-xs-auto">
-                <div class="w-100 bg-dark-gradient d-flex-column align-items-center j-c-center border-radius-08 h-xs-50">
-                    <img class="w-15" src="../assets/icons/trophy-generic-white.svg" alt="Coppa">
-                    <h4 class="fsize-xs-3 mb-xs-4 letter-spacing-2 f-w-500 t-align-center mt-xs-2 w-50">Nessuna classifica in questo mese!</h4>
+                <div class="w-100 d-flex-column align-items-center j-c-center border-radius-08 h-xs-50">
+                    <img class="w-25" src="../assets/icons/empty-post.svg" alt="Coppa">
+                    <h4 class="fsize-xs-3 mb-xs-4 letter-spacing-1 f-w-300 t-align-center mt-xs-2 w-75">Crea il tuo primo post!</h4>
+                    <button class="bg-purple-300 d-flex-row align-items-center j-c-center fsize-xs-2 f-w-500 w-75">
+                        <img src="../assets/icons/plus-black.svg" alt="">
+                        <span>Crea un post</span>
+                    </button>
                 </div>                
             </section>
-        </div>
-
+        </div>            
+        
         <div class="app-bar-area d-flex-row j-c-center z-index-max">            
             <div class="container d-flex-row align-items-center j-c-space-between">
                 <a href="">
@@ -40,18 +44,17 @@
                 </a>
                 <a href="metrics-empty.html">
                     <div class="d-flex-column align-items-center">
-                        <img src="../assets/icons/icon-metrics-active.svg" alt="Metriche">
-                        <span class="fsize-xs-0 f-w-600 purple-200 letter-spacing-1">Metriche</span>
+                        <img src="../assets/icons/icon-metrics-inactive.svg" alt="Metriche">
+                        <span class="fsize-xs-0 f-w-300 dark-200 letter-spacing-1">Metriche</span>
                     </div>
                 </a>
                 <a href="posts-empty.html">
                     <div class="d-flex-column align-items-center">
-                        <img src="../assets/icons/icon-chat-inactive.svg" alt="Chat">
-                        <span class="fsize-xs-0 f-w-300 dark-200 letter-spacing-1">Chat</span>
+                        <img src="../assets/icons/icon-chat-active.svg" alt="Chat">
+                        <span class="fsize-xs-0 f-w-600 purple-200 letter-spacing-1">Chat</span>
                     </div>
                 </a>   
             </div>
         </div> 
-        
     </body>
 </html>
