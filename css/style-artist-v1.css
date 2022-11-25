@@ -486,6 +486,11 @@ hr {
     display:-webkit-flex;
     flex-direction: row;
 }
+.d-flex-row-reverse {
+    display: flex;
+    display:-webkit-flex;
+    flex-direction: row-reverse;
+}
 .d-flex-column {
     display: flex;
     display:-webkit-flex;
@@ -1137,6 +1142,9 @@ nav .container {
     }
     .ml-xs-10 {
         margin-left: 10%;
+    }
+    .ml-xs-20 {
+        margin-left: 20%;
     }
     /* MARGIN RIGHT && LEFT */
     .mx-xs-auto {
