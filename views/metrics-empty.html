@@ -10,30 +10,45 @@
         <link rel="stylesheet" href="../css/style-artist-v1.css">
     </head>
     <body>
-        <nav class="top-bar-area-block d-flex-row align-items-center j-c-center white z-index-max">
-            <div class="container d-flex-row align-items-center j-c-center">
-                <a href="">
-                    <img src="../assets/logo/logo.svg" alt="MIDLY">
-                </a>
+        <nav class="top-bar-area-overlay-fixed bg-dark d-flex-row align-items-center j-c-center white z-index-max top-0 shadow-dark-400">
+            <div class="container d-flex-row align-items-center j-c-space-between">
+                <div class="d-flex-row align-items-center j-c-center">
+                    <img src="../assets/logo/logo-simple-artists.svg" alt="MIDLY">
+                </div>
+
+                <div class="d-flex-row align-items-center j-c-center border-radius-100 avatar-36">
+                    <a class="avatar-36 position-relative d-flex-row align-items-center j-c-center" href="profile.html">
+                        <img src="../assets/icons/icon-gear.svg" alt="SETTINGS">
+                    </a>
+                </div>
             </div>
         </nav>
         
-        <div class="container pb-xs-24 pb-lg-8">
+        <div class="container pb-xs-30 pb-lg-8 pt-xs-20 pt-lg-6">
             <div id="current-month">
                 <h1>Luglio 2022</h1>
             </div>
 
             <section id="metrics-empty-state" class="mt-xs-16 mx-xs-auto">
-                <div class="w-100 bg-dark-gradient d-flex-column align-items-center j-c-center border-radius-08 h-xs-50">
+                <a class="w-100 bg-dark-gradient d-flex-column align-items-center j-c-center border-radius-1 h-xs-50">
+                    <img class="w-15" src="../assets/icons/trophy-generic-white.svg" alt="Coppa">
+                    <h4 class="fsize-xs-3 mb-xs-4 letter-spacing-1 f-w-400 grey-300 t-align-center mt-xs-2 w-50">Nessuna classifica creata!</h4>
+                    <div class="d-flex-row align-items-center j-c-center mt-xs-6">
+                        <img src="../assets/icons/icon-plus.svg" alt="+">
+                        <span class="ml-xs-4 no-shrink letter-spacing-1 white fsize-xs-3">Crea una classifica</span>
+                    </div>
+                </a> 
+
+                <!-- <div class="w-100 bg-dark-gradient d-flex-column align-items-center j-c-center border-radius-08 h-xs-50">
                     <img class="w-15" src="../assets/icons/trophy-generic-white.svg" alt="Coppa">
                     <h4 class="fsize-xs-3 mb-xs-4 letter-spacing-2 f-w-500 t-align-center mt-xs-2 w-50">Nessuna classifica in questo mese!</h4>
-                </div>                
+                </div>                 -->
             </section>
         </div>
 
         <div class="app-bar-area d-flex-row j-c-center z-index-max">            
             <div class="container d-flex-row align-items-center j-c-space-between">
-                <a href="">
+                <a href="leaderboards-empty.html">
                     <div class="d-flex-column align-items-center">
                         <img src="../assets/icons/icon-rankings-inactive.svg" alt="Classifiche">
                         <span class="fsize-xs-0 f-w-300 dark-200 letter-spacing-1">Classifiche</span>
