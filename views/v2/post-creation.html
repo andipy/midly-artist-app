@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="IT">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <title>Artist Create New Post</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/style-artist-v1.css">
+    </head>
+    <body>
+        <nav class="top-bar-area-overlay-fixed bg-dark d-flex-row align-items-center j-c-center white z-index-max top-0 shadow-dark-400">
+            <div class="container d-flex-row align-items-start j-c-start h-100">
+                <a class="topbar-icon-left" href="posts-full.html">
+                    <img src="../../assets/icons/icon-arrowleft.svg" alt="BACK">
+                </a>
+            </div>
+        </nav>
+        
+        <div class="container pb-xs-30 pb-lg-8 pt-xs-20 pt-lg-6 ">
+
+            <div class="mt-xs-5">
+                <h1 class="fsize-xs-6 f-w-500">Crea un nuovo post</h1>
+            </div>
+
+            <form class="mt-xs-4">
+                <textarea type="text" name="caption" placeholder="Scrivi qui il testo del post" rows="6" class="font-body p-xs-4 white w-100 fsize-xs-3 letter-spacing-1 f-w-400 bg-dark-soft border-radius-04 mb-xs-4"></textarea>
+
+                <label for="media" class="font-body fsize-xs-1 f-w-400 grey-200">Aggiungi una immagine, un video o un audio</label>
+                <input type="file" id="media" name="media" class="bg-dark-soft border-radius-04" accept="image/*, video/*, audio/*">
+
+                <button class="bg-purple-300 dark-900 d-flex-row align-items-center j-c-center fsize-xs-3 letter-spacing-1 f-w-600">Pubblica post</button>
+            </form>
+
+        </div>
+                
+    </body>
+</html>
