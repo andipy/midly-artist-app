@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="IT">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>Your Rank</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/style-artist-vcurrent.css">
+    </head>
+    <body>        
+        <nav class="top-bar-area-block d-flex-row align-items-center j-c-center white z-index-max">
+            <div class="container d-flex-row align-items-center j-c-center">
+                <a href="#">
+                    <img src="../../assets/logo/logo-simple-artists.svg" alt="MIDLY">
+                </a>
+            </div>
+        </nav>
+        
+        <div class="container pb-xs-12 pb-lg-8">
+            <div>
+                <h2 class="fsize-xs-9 mb-xs-1 white">Registrazione</h2>
+                <p class="fsize-xs-2 f-w-200 grey-200 letter-spacing-1">Registrati su Midly con email e password. Per procedere leggi attentamente i termini e condizioni di uso.</p>
+            </div>
+            
+            <!-- this div down here was fixed at the bottom (class="container position-absolute bottom-5"), but it gives problems in short screens -->
+            <div>
+                <form action="POST">
+                    <div class="mt-xs-8 mb-xs-8 mt-lg-4 mb-lg-4">
+                        <label class="fsize-xs-1 grey-300 letter-spacing-3 pl-xs-6" for="input-email">EMAIL</label>
+                        <input id="input-email" class="bg-dark-soft white letter-spacing-1" type="email" placeholder="La tua email">
+                    </div>
+                    <div class="mt-xs-8 mb-xs-8 mt-lg-4 mb-lg-4">
+                        <label class="fsize-xs-1 grey-300 letter-spacing-3 pl-xs-6" for="input-password">CREA PASSWORD</label>
+                        <input id="input-password" class="bg-dark-soft white letter-spacing-1" type="password" placeholder="Crea una password">
+                        <div class="fsize-xs-0 grey-300 letter-spacing-1 mt-xs-4">
+                            <p>La password deve:
+                                <ul>
+                                    <li class="pl-xs-2">1) essere lunga almeno 8 caratteri in totale</li>
+                                    <li class="pl-xs-2">2) contenere almeno un numero da 0 a 9</li>
+                                    <li class="pl-xs-2">3) contenere almeno un carattere speciale (#!?)</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div> 
+                    <div class="mt-xs-8 mb-xs-8 mt-lg-4 mb-lg-4">
+                        <label class="fsize-xs-1 grey-300 letter-spacing-3 pl-xs-6" for="input-password">CONFERMA PASSWORD</label>
+                        <input id="input-password" class="bg-dark-soft white letter-spacing-1" type="password" placeholder="Conferma la password">
+                    </div>
+
+                    <div class="d-flex-row j-c-start align-items-center mt-xs-4 mb-xs-4">
+                        <input class="mr-xs-4 no-shrink" type="checkbox" name="" id="">
+                        <p class="fsize-xs-1 grey-400">Accetto i <a class="grey-200 text-underline" href="">Termini e le condizioni</a> e la <a class="grey-200 text-underline" href="">Privacy policy</a></p>
+                    </div>
+                    <div class="d-flex-row j-c-start align-items-center mt-xs-4 mb-xs-4">
+                        <input class="mr-xs-4 no-shrink" type="checkbox" name="" id="">
+                        <p class="fsize-xs-1 grey-400">Acconsento al trattamento dei miei dati per finalità di marketing e promozionale.</p>
+                    </div>
+
+                    <button class="bg-purple-400" onclick="location.href='followed-full.html'">
+                        <span class="fsize-xs-3 f-w-600 dark-900 letter-spacing-1">Accedi</span>                        
+                    </button>
+                    <!-- <button class="bg-dark-soft" onclick="location.href='followed-full.html'">
+                        <span class="fsize-xs-3 f-w-400 grey-500 letter-spacing-1">Accedi</span>                        
+                    </button> -->
+                </form>
+
+                <div class="d-flex-row align-items-center j-c-center mt-xs-8">
+                    <p class="fsize-xs-2 grey-400 mr-xs-2">Hai già un account?</p>
+                    <a class="fsize-xs-2 purple-200 f-w-600" href="signup-fan.html">Accedi!</a>
+                </div>
+            </div>            
+        </div>        
+    </body>
+</html>
