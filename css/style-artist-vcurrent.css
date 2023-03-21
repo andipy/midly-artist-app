@@ -1038,6 +1038,7 @@ nav .container {
     select {
         width: 100%;
         padding: 4% 0;
+        border-radius: .8em;
         border: none;
         text-indent: 20px;
     }
@@ -1430,13 +1431,13 @@ nav .container {
     button {
         width: 100%;
         padding: 3.5% 0;
-        border-radius: .6em;
+        border-radius: .8em;
         border: none;                
     }
     .secondary {
         width: 100%;
         padding: 3.5% 0;
-        border-radius: .6em;
+        border-radius: .8em;
         background: none;
         border: 1.5px solid #8d8d8d;
     }
@@ -1445,7 +1446,7 @@ nav .container {
     input {
         width: 100%;
         padding: 3.5% 0;
-        border-radius: .6em;
+        border-radius: .8em;
         border: none;
         text-indent: 20px;
     }
@@ -1461,6 +1462,7 @@ nav .container {
     select {
         width: 100%;
         padding: 3.5% 0;
+        border-radius: .8em;
         border: none;
         text-indent: 20px;
     }
@@ -1835,6 +1837,7 @@ nav .container {
     select {
         width: 100%;
         padding: 3.5% 0;
+        border-radius: .8em;
         border: none;
         text-indent: 20px;
     }
@@ -2208,6 +2211,7 @@ nav .container {
     select {
         width: 100%;
         padding: 3.5% 0;
+        border-radius: .8em;
         border: none;
         text-indent: 20px;
     }
@@ -2577,6 +2581,7 @@ nav .container {
     select {
         width: 100%;
         padding: 3.5% 0;
+        border-radius: .8em;
         border: none;
         text-indent: 20px;
     }
@@ -2949,6 +2954,7 @@ nav .container {
     select {
         width: 100%;
         padding: 3.5% 0;
+        border-radius: .8em;
         border: none;
         text-indent: 20px;
     }
