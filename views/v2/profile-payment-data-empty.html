@@ -7,6 +7,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../../css/style-artist-vcurrent.css">
     </head>
     <body>
@@ -18,42 +20,71 @@
             </div>
         </nav>
         
-        <div class="container pb-xs-30 pb-lg-8 pt-xs-topbar">
-            <div id="current-month">
-                <h1>Profile</h1>
-            </div>
+        <div class="container pb-xs-appbar pt-xs-topbar">
+            <h1 class="font-heading">Profile</h1>
 
-            <div class="mt-xs-2 d-flex-row align-items-center gap-1em">
-                <!-- <div class="avatar-96 border-radius-100 bg-purple-300 d-flex-row align-items-center j-c-center">
+            <div class="mt-xs-2 d-flex-row align-items-center gap-0_5em">
+                <!-- <div class="avatar-80 border-radius-100 bg-purple-300 d-flex-row align-items-center j-c-center">
                     <span class="white f-w-500 fsize-xs-5">A</span>
                 </div> -->
-                <img class="avatar-96 border-radius-100" src="../../assets/images/placeholder.jpg" alt="{{user-name}}">
+                <img class="avatar-80 border-radius-100" src="../../assets/images/placeholder.jpg" alt="{{user-name}}">
                 <div class="d-flex-column">
-                    <h5 class="fsize-xs-5 f-w-500 letter-spacing-1">Artist name</h5>
-                    <span class="grey-200 fsize-xs-3">artist@email.me</span>
+                    <h5 class="fsize-xs-4 f-w-500 font-heading">Artist name ciao lungo lunghissimo ye</h5>
+                    <span class="grey-200 fsize-xs-1 font-body">artist@email.me</span>
                 </div>                
             </div>
 
-            <section id="info" class="mt-xs-12">
-                <div class="d-flex-column">                 
+            <section id="your-money" class="mt-xs-10">
+                <!-- <h4 class="fsize-xs-4 mb-lg-1 letter-spacing-1 f-w-600 font-heading">Riscuoti gli incassi</h4> -->
+
+                <article id="spotify-account" class="bg-dark-gradient-radial border-radius-1 pt-xs-8 pb-xs-2 pr-xs-8 pl-xs-8">
+                        <div class="mb-xs-4">
+                            <h5 class="fsize-xs-3 f-w-500 font-heading mb-xs-2">Riscuoti gli incassi</h5>
+                            <p class="font-body f-w-400 fsize-xs-1 grey-200 line-height-140">Compila i tuoi dati per ricevere i tuoi incassi all'IBAN che desideri.</p>
+                        </div>
+
+                        <div class="border-dark w-100 pt-xs-6 pb-xs-6 pl-xs-6 pr-xs-6 border-radius-08">
+                            <div class="d-flex-column gap-1em">
+                                <div class="d-flex-row gap-0_5em">
+                                    <img class="w-15" src="../../assets/icons/icon-credit-card-chip.svg" alt="">
+                                    <div class="d-flex-column j-c-center gap-0_5em w-100">
+                                        <div class="h-10px bg-greyish-400 w-50 border-radius-100"></div>
+                                        <div class="h-10px bg-greyish-400 w-65 border-radius-100"></div>
+                                    </div>
+                                </div>                                
+                                <span class="font-special-01 dark-200 fsize-xs-2 fsize-md-3 letter-spacing-1">3666 2789 4190 1728</span>
+                            </div>
+
+                            <div class="d-flex-row j-c-end mt-xs-4">
+                                <div class="avatar-32 border-radius-100 bg-greyish-400-transp transform-x-10px"></div>
+                                <div class="avatar-32 border-radius-100 bg-greyish-400-transp"></div>
+                            </div>
+                        </div>
+
+                        <button class="bg-purple-300 dark-900 letter-spacing-1 f-w-500 mt-xs-4 mb-xs-4" onclick="location.href='profile-payment-data-detail-empty.html'">Compila i tuoi dati</button>                    
+                </article>
+            </section>
+
+            <section id="info" class="mt-xs-12">                
+                <div class="d-flex-column mt-xs-2">                 
                     <a class="d-flex-row j-c-space-between mb-xs-3" href="terms-and-conditions-fans.html">
                         <div class="d-flex-row align-items-center w-100">
                             <img class="mr-xs-2" src="../../assets/icons/icon-terms.svg" alt="TERMS">
-                            <h6 class="fsize-xs-3 f-w-300 letter-spacing-1">Termini e condizioni</h6>
+                            <h6 class="fsize-xs-3 f-w-300 font-heading">Termini e condizioni</h6>
                         </div>
                         <img src="../../assets/icons/icon-arrowright-rounded-darker.svg" alt="Go Right">
                     </a>
                     <a class="d-flex-row j-c-space-between mb-xs-3" href="privacy-policy-fans.html">
                         <div class="d-flex-row align-items-center w-100">
                             <img class="mr-xs-2" src="../../assets/icons/icon-terms.svg" alt="PP">
-                            <h6 class="fsize-xs-3 f-w-300 letter-spacing-1">Informativa sulla privacy artisti</h6>
+                            <h6 class="fsize-xs-3 f-w-300 font-heading">Informativa sulla privacy artisti</h6>
                         </div>
                         <img src="../../assets/icons/icon-arrowright-rounded-darker.svg" alt="Go right">
                     </a>
                     <a class="d-flex-row j-c-space-between mb-xs-3" href="cookie-policy.html">
                         <div class="d-flex-row align-items-center w-100">
                             <img class="mr-xs-2" src="../../assets/icons/icon-cookie.svg" alt="CP">
-                            <h6 class="fsize-xs-3 f-w-300 letter-spacing-1">Cookie policy</h6>
+                            <h6 class="fsize-xs-3 f-w-300 font-heading">Cookie policy</h6>
                         </div>
                         <img src="../../assets/icons/icon-arrowright-rounded-darker.svg" alt="Go right">
                     </a>
@@ -62,7 +93,7 @@
 
             <div id="logout" class="mt-xs-10 mb-xs-10 mt-lg-4 mb-lg-4">
                 <a href="login-fan.html">
-                    <h6 class="fsize-xs-3 f-w-500 blue-300 letter-spacing-1">Esegui il log out</h6>
+                    <h6 class="fsize-xs-3 f-w-500 blue-300 letter-spacing-1 font-heading">Esegui il log out</h6>
                 </a>
             </div>
         </div>
@@ -87,7 +118,7 @@
                         <span class="fsize-xs-0 f-w-300 dark-200 letter-spacing-1">Stats</span>
                     </div>
                 </a>                
-                <a href="profile.html">
+                <a href="profile-payment-data-empty.html">
                     <div class="d-flex-column align-items-center">
                         <img src="../../assets/icons/icon-profile-active.svg" alt="Profilo">
                         <span class="fsize-xs-0 f-w-600 purple-200 letter-spacing-1">Profilo</span>

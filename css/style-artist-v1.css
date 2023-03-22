@@ -25,7 +25,7 @@ p {
     line-height: 140%;
 }
 .shadow-dark-400 {
-    box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 2px 10px 2px rgba(15, 17, 28, 0.75);
 }
 a {
     text-decoration: none;
@@ -116,7 +116,7 @@ li {
     background-color: var(--color-main-bg);
 }
 .bg-dark-soft {
-    background-color: #161616;
+    background-color: #1C1E27;
 }
 .bg-grey-transp50 {
     background-color: rgba(77, 77, 77, 0.5)
@@ -186,10 +186,10 @@ li {
     background: linear-gradient(0deg, #FA233B 0.38%, #FB5C74 97.84%);
 }
 .bg-dark-gradient {
-    background: linear-gradient(.75turn, #171717, #111111);
+    background: linear-gradient(.75turn, #232537, #141622);
 }
 .bg-dark-gradient-radial {
-    background: radial-gradient(#171717, #111111);
+    background: radial-gradient(#232537, #141622);
 }
 .bg-dark-overlay-header {
     background: linear-gradient(0turn, #0F111C, #0f111c00);
@@ -929,14 +929,14 @@ nav .container {
     height: 56px;
     position: fixed;
     bottom: 0;
-    background-color: #161616;
+    background-color: #1C1E27;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     align-items: center;
 }
 .text-bar input {
-    background-color: #000000;
+    background-color: #0F111C;
     border-radius: 100em;
     height: 36px;
     color: #FFFFFF;
@@ -985,7 +985,7 @@ nav .container {
     bottom: -2px;
     border-radius: 24px 24px 0 0;    
     background-color: var(--color-main-bg);
-    box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.6), 0 -12px 12px 0 rgba(0, 0, 0, 0.6);   
+    box-shadow: 0 12px 12px 0 rgba(11, 12, 20, 0.6), 0 -12px 12px 0 rgba(11, 12, 20, 0.6);   
 }
 .app-bar-area-suspended {
     width: 85%;    
@@ -996,7 +996,7 @@ nav .container {
     transform: translateX(-50%);
     border-radius: 24px;    
     background-color: var(--color-main-bg);
-    box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.6), 0 -12px 12px 0 rgba(0, 0, 0, 0.6);
+    box-shadow: 0 12px 12px 0 rgba(11, 12, 20, 0.6), 0 -12px 12px 0 rgba(11, 12, 20, 0.6);
 }
 .app-bar {                
     width: 85%;
@@ -1016,8 +1016,8 @@ nav .container {
     --font-heading: 'Inter', sans-serif;
     --font-body: 'Inter', sans-serif;
     --font-special-01: 'Exo 2', sans-serif;
-    --color-main-bg: #000000;
-    --color-main-bg-transp_0: #00000000;
+    --color-main-bg: #0F111C;
+    --color-main-bg-transp_0: #0f111c00;
 }
 @media (min-width: 0px){
     :root {
@@ -1249,7 +1249,7 @@ nav .container {
         padding-bottom: 30%;
     }
     .pb-xs-appbar {
-        padding-bottom: calc(var(--app-bar-height) * 1.15);
+        padding-bottom: calc(var(--app-bar-height) * 1.05);
     }
     /* PADDING TOP */
     .pt-xs-04 {
