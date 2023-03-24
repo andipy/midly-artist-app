@@ -136,8 +136,14 @@ li {
 .bg-grey-500 {
     background-color: #4D4D4D;
 }
+.bg-red-100 {
+    background-color: #ffcece;
+}
 .bg-red-300 {
     background-color: #FF6565;
+}
+.bg-red-700 {
+    background-color: #301a1a;
 }
 .bg-purple-200-transp10 {
     background-color: rgba(203, 151, 255, 0.1);
@@ -372,6 +378,9 @@ li {
 }
 .green-spotify {
     color: #1DB954;
+}
+.red-100 {
+    color: #ffc3c3;
 }
 .red-300 {
     color: #FF6565;
@@ -696,6 +705,30 @@ li {
 .avatar-12 {
     height: 12px;
     width: 12px;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+.avatar-14 {
+    height: 14px;
+    width: 14px;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+.avatar-16 {
+    height: 16px;
+    width: 16px;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+.avatar-18 {
+    height: 18px;
+    width: 18px;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+.avatar-20 {
+    height: 20px;
+    width: 20px;
     aspect-ratio: 1;
     object-fit: cover;
 }
