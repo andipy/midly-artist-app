@@ -47,6 +47,9 @@ hr {
 li {
     list-style: none;
 }
+.pre-wrap {
+    white-space: pre-wrap;
+}
 
 /******************************************/
 /*********** MODALS & SNACKBARS ***********/
