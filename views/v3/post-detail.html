@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="IT">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>Artist Rank</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/style-artist-vcurrent.css">
+    </head>
+    <body>
+        <nav class="top-bar-area-overlay-fixed bg-dark d-flex-row align-items-center j-c-center white z-index-max top-0 shadow-dark-400">
+            <div class="container d-flex-row align-items-start j-c-end">
+                <a class="topbar-icon-left" href="posts-full.html">
+                    <img src="../../assets/icons/icon-arrowleft.svg" alt="BACK">
+                </a>
+                <div class="d-flex-row-reverse">
+                    <img id="delete-post" class="ml-xs-20" src="../../assets/icons/icon-trash.svg" alt="DELETE">
+                    <!-- <img id="edit-post" src="../../assets/icons/icon-edit.svg" alt="EDIT"> -->
+                </div>
+            </div>
+        </nav>        
+        
+        <div class="container pt-xs-topbar pb-xs-20 pb-lg-4">
+
+            <div id="modal-group" class="modal">
+                <div class="d-flex-column pl-xs-8 pr-xs-8 pt-xs-8 pb-xs-4 pl-sm-4 pr-sm-4 pt-sm-3 pb-sm-3 pl-md-4 pr-md-4 pt-md-3 pb-md-3 pl-lg-2 pr-lg-2 pt-lg-2 pb-lg-2 modal-content border-radius-1">
+                    <h4 class="fsize-xs-5 mb-xs-4 grey-1000 letter-spacing-2 f-w-600">Fai attenzione!</h4>
+                    <p class="fsize-xs-2 f-w-400 grey-800 letter-spacing-1">Stai per eliminare questo post con tutti i suoi commenti, l'operazione è irreversibile! Sei sicuro di volerlo eliminare?</p>
+                    <button id="cancel-delete" class="fsize-xs-3 f-w-600 dark-900 letter-spacing-1 bg-acid-lime border-radius-04 mt-xs-4">Non eliminare</button>
+                    <h6 id="confirm-delete" class="fsize-xs-3 f-w-500 red-500 letter-spacing-1 mt-xs-8 mb-xs-4 t-align-center">Elimina post</h6>
+                </div>
+            </div>
+
+            <section id="thread" class="mt-xs-4 mt-lg-4">
+                <div class="d-flex-column fsize-xs-3 border-radius-08 p-xs-6 mb-xs-4 bg-dark-soft">
+                    <div class="fsize-xs-2">
+                        <div class="d-flex-row j-c-start align-items-center mb-xs-4">
+                            <span class="mt-xs-2 mb-xs-2 f-w-600 gold">YOU:</span>
+                        </div>
+
+                        <div class="d-flex-column mb-xs-4 mt-xs-4">
+                            <p class="font-body pre-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi magnam vero, ducimus ullam tempore quos saepe ratione corrupti, at natus beatae facilis quae illo quas neque, nobis similique qui officia!</p>
+                        </div>
+
+                        <div class="d-flex-row j-c-end align-items-center mt-xs-2 greyish-400">
+                            <span class="pt-xs-1 pb-xs-1 pl-xs-2 pr-xs-2 fsize-xs-2 border-radius-100 bg-grey-transp50">10:32</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="messages" class="mt-xs-12 mt-lg-8">
+                <div class="d-flex-row fsize-xs-3 mb-xs-8">
+                    <span class="f-w-600 mr-xs-2 fsize-xs-2 color01">moriCon_90:</span>
+                    <span class="font-body f-w-400 fsize-xs-2">broski se non lo diciamo anessunoooooooooooo</span>
+                </div>
+
+                <div class="d-flex-row fsize-xs-3 mb-xs-8">
+                    <span class="f-w-600 mr-xs-2 fsize-xs-2 color02">ema:</span>
+                    <span class="font-body f-w-400 fsize-xs-2">mi rendere felice lo studio del momento torcente in un sistema di forze in 4 dimensioni</span>
+                </div>
+
+                <div class="d-flex-row fsize-xs-3 mb-xs-8">
+                    <span class="f-w-600 mr-xs-2 fsize-xs-2 color03">dani_theDandi:</span>
+                    <span class="font-body f-w-400 fsize-xs-2">o gesù giuseppe maria, porta in salvo l'anima mia</span>
+                </div>
+
+                <div class="d-flex-row fsize-xs-3 mb-xs-8">
+                    <span class="f-w-600 mr-xs-2 fsize-xs-2 color04">pezcoller:</span>
+                    <span class="font-body f-w-400 fsize-xs-2">raga avete spaccato un botto con il premioOOOOOOO VIAA MOOOOOOOO</span>
+                </div>
+
+                <div class="d-flex-row fsize-xs-3 mb-xs-8">
+                    <span class="f-w-600 mr-xs-2 fsize-xs-2 color05">fra_mienere:</span>
+                    <span class="font-body f-w-400 fsize-xs-2">lo sappiamo solo noiiiiiiiiii</span>
+                </div>
+            </section>
+
+            <section class="text-bar">
+                <form class="container d-flex-row align-items-center gap-1em">
+                    <input type="text" name="user-message" id="user-message" placeholder="Type here your message">
+                    <button class="chat-button d-flex-row align-items-center j-c-center bg-acid-lime"><img src="../../assets/icons/icon-arrow-up.svg" alt=""></button>
+                </form>                
+            </section>
+        </div>
+
+
+        <script>
+            //get the trash icon
+            var deletePost = document.getElementById("delete-post");
+            var editPost = document.getElementById("edit-post");
+
+            // get the whole modal group (overlay + actual modal content)
+            var modalGroup = document.getElementById("modal-group");
+
+            //get the buttons in the modal
+            var cancelDelete = document.getElementById("cancel-delete");
+            var confirmDelete = document.getElementById("confirm-delete");
+
+
+            function openModal(){
+                modalGroup.style.display = "block";
+            };
+            function dontDeletePost() {
+                modalGroup.style.display = "none";
+            };
+            function doDeletePost() {
+                modalGroup.style.display = "none";
+                location.href = 'posts-full.html'
+            };
+
+            deletePost.addEventListener("click", openModal);
+            cancelDelete.addEventListener("click", dontDeletePost);
+            confirmDelete.addEventListener("click", doDeletePost);
+        </script>
+                
+    </body>
+</html>
