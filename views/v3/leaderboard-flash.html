@@ -46,7 +46,7 @@
                             <img class="avatar-32 border-radius-100" src='../../assets/icons/icon-spotify-green.svg' />
                         </div>
                     </a>
-                    <div class="d-flex-row align-items-center j-c-center border-radius-100 avatar-40 bg-black-transp50 position-relative">
+                    <div id="open-modal" class="d-flex-row align-items-center j-c-center border-radius-100 avatar-40 bg-black-transp50 position-relative">
                         <div class="position-absolute-x-y bg-gold-transp25 border-radius-100 z-index-1 flash-animation-badge-icon"></div>
                         <img class="avatar-32 z-index-2" src='../../assets/icons/icon-info-lime.svg' />
                     </div>
@@ -238,8 +238,82 @@
                     <button class="chat-button d-flex-row align-items-center j-c-center bg-acid-lime"><img src='../../assets/icons/icon-arrow-up.svg' /></button>
                 </form>                
             </section>
+        </div>
 
+        <div id="modal" class='position-fixed bottom-hidden h-98 bg-dark w-100 full-screen-modal slide-down'>
+            <nav class='d-flex-row align-items-center j-c-center white z-index-max top-0'>
+                <div class="container d-flex-row align-items-center j-c-start w-100">
+                    <div id="close-modal" class="avatar-28">
+                        <img class="avatar-28 bg-dark-soft-transp75 border-radius-100" src='../../assets/icons/icon-arrowleft.svg' />
+                    </div>
+                </div>
+            </nav>
+
+            <div class="container">
+                <h1 class="fsize-xs-4 grey-200 f-w-600 mb-xs-4">Vinci i badge di SUPER FAN</h1>
+
+                <div class="carousel d-flex-row overflow-x mt-xs-2 mt-lg-2">
+                    <div class="d-flex-column j-c-space-between w-min-100 bg-dark-soft pt-xs-6 pb-xs-8 pl-xs-8 pr-xs-4 border-radius-1 gap-1em mr-xs-2 position-relative overflow-all-hidden">
+                        <p class="fsize-xs-10 f-w-700 lime-400 line-height-1 z-index-2">SUPER </br> FAN #1</p>
+                        
+                        <span class="f-w-300 grey-200 w-50 z-index-2">della classifica FLASH sul brano</span>
+                        <span class="fsize-xs-6 f-w-600 white w-60 z-index-2">Titolo del brano</span>
+            
+                        <img class="position-absolute right-0 bottom-12 flash-badge-image-rotation w-45 z-index-1" src='../../assets/illustrations/GOLD.png' alt="" />
+                    </div>
+                    <div class="d-flex-column j-c-space-between w-min-100 bg-dark-soft pt-xs-6 pb-xs-8 pl-xs-8 pr-xs-4 border-radius-1 gap-1em mr-xs-2 position-relative overflow-all-hidden">
+                        <p class="fsize-xs-10 f-w-700 lime-400 line-height-1 z-index-2">SUPER </br> FAN #2</p>
+                        
+                        <span class="f-w-300 grey-200 w-50 z-index-2">della classifica FLASH sul brano</span>
+                        <span class="fsize-xs-6 f-w-600 white w-60 z-index-2">Titolo del brano</span>
+            
+                        <img class="position-absolute right-0 bottom-12 flash-badge-image-rotation w-45 z-index-1" src='../../assets/illustrations/SILVER.png' alt="" />
+                    </div>
+                    <div class="d-flex-column j-c-space-between w-min-100 bg-dark-soft pt-xs-6 pb-xs-8 pl-xs-8 pr-xs-4 border-radius-1 gap-1em mr-xs-2 position-relative overflow-all-hidden">
+                        <p class="fsize-xs-10 f-w-700 lime-400 line-height-1 z-index-2">SUPER </br> FAN #3</p>
+                        
+                        <span class="f-w-300 grey-200 w-50 z-index-2">della classifica FLASH sul brano</span>
+                        <span class="fsize-xs-6 f-w-600 white w-60 z-index-2">Titolo del brano</span>
+            
+                        <img class="position-absolute right-0 bottom-12 flash-badge-image-rotation w-45 z-index-1" src='../../assets/illustrations/BRONZE.png' alt="" />
+                    </div>
+                    <div class="d-flex-column j-c-space-between w-min-100 bg-dark-soft pt-xs-6 pb-xs-8 pl-xs-8 pr-xs-4 border-radius-1 gap-1em mr-xs-2 position-relative overflow-all-hidden">
+                        <p class="fsize-xs-10 f-w-700 lime-400 line-height-1 z-index-2">SUPER </br> FAN #4</p>
+                        
+                        <span class="f-w-300 grey-200 w-50 z-index-2">della classifica FLASH sul brano</span>
+                        <span class="fsize-xs-6 f-w-600 white w-60 z-index-2">Titolo del brano</span>
+            
+                        <img class="position-absolute right-0 bottom-12 flash-badge-image-rotation w-45 z-index-1" src='../../assets/illustrations/GENERIC.png' alt="" />
+                    </div>
+                </div>
+
+                <h3 class="fsize-xs-4 grey-200 f-w-600 mt-xs-10 mb-xs-4">Come guadagnare punti</h3>
+                <div class="d-flex-row gap-0_5em">
+                    <span class="fsize-xs-4 f-w-600 grey-200">x3</span>
+                    <p class="fsize-xs-1 grey-300">Ogni ascolto del brano “Titolo del brano” vale 3 punti: ti permette di scalare la classifica FLASH più velocemente.</p>
+                </div>
+                <div class="d-flex-row gap-0_5em mt-xs-4">
+                    <span class="fsize-xs-4 f-w-600 grey-200">x1</span>
+                    <p class="fsize-xs-1 grey-300">Ogni altro brano di Artist name ti fa fare 1 punto, e viene conteggiato massimo 3 volte al giorno.</p>
+                </div>
+            </div>
         </div>
 
     </body>
+
+    <script>
+        let modal = document.getElementById('modal')
+        let buttonOpenModal = document.getElementById('open-modal')
+        let buttonCloseModal = document.getElementById('close-modal')
+
+        buttonOpenModal.addEventListener('click', () => {
+            modal.classList.remove('slide-down')
+            modal.classList.add('slide-up')
+        })
+
+        buttonCloseModal.addEventListener('click', () => {
+            modal.classList.remove('slide-up')
+            modal.classList.add('slide-down')
+        })
+    </script>
 </html>
